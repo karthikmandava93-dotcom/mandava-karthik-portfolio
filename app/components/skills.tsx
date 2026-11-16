@@ -1,28 +1,23 @@
 import { skills } from "@/lib/portfolio-data";
 import { SectionHeader } from "./section-header";
-import { Users, BarChart3, Search, Cpu } from "lucide-react";
+import { Users, BarChart3, Search } from "lucide-react";
 import { Reveal } from "./reveal";
 
 const skillGroups = [
   {
-    key: "hrTalentOps" as const,
-    title: "HR & Talent Operations",
-    icon: <Users className="h-5 w-5 text-teal-400" />,
-  },
-  {
-    key: "hrAnalyticsReporting" as const,
-    title: "HR Analytics & Reporting",
-    icon: <BarChart3 className="h-5 w-5 text-indigo-400" />,
-  },
-  {
-    key: "sourcingRecruitmentTools" as const,
-    title: "Sourcing & Recruitment Tools",
+    key: "recruitmentSourcing" as const,
+    title: "Recruitment & Sourcing",
     icon: <Search className="h-5 w-5 text-teal-400" />,
   },
   {
-    key: "technicalProductivityTools" as const,
-    title: "Technical & Productivity Tools",
-    icon: <Cpu className="h-5 w-5 text-indigo-400" />,
+    key: "hrOperations" as const,
+    title: "HR Operations",
+    icon: <Users className="h-5 w-5 text-indigo-400" />,
+  },
+  {
+    key: "dataTools" as const,
+    title: "Data & Tools",
+    icon: <BarChart3 className="h-5 w-5 text-teal-400" />,
   },
 ];
 
@@ -32,13 +27,13 @@ export function Skills() {
       <div className="mx-auto max-w-6xl px-6">
         <Reveal>
           <SectionHeader
-            eyebrow="Skills & Tools"
+            eyebrow="Skills & Competencies"
             title="HR competencies & technical toolset"
-            description="Bridging core human resource processes with data analytics, automation, and AI workflows."
+            description="Hands-on expertise in full-cycle recruitment, candidate sourcing, HR operations, and recruitment analytics."
           />
         </Reveal>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {skillGroups.map((group, index) => (
             <Reveal key={group.key} delay={index * 0.1}>
               <div className="glass-card h-full rounded-2xl p-6 sm:p-8 transition-transform duration-300 hover:-translate-y-1">

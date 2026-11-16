@@ -9,13 +9,13 @@ export function Achievements() {
       <div className="mx-auto max-w-6xl px-6">
         <Reveal>
           <SectionHeader
-            eyebrow="Recognitions"
-            title="Formal Recommendations & Leadership Awards"
-            description="Endorsements and Letters of Recommendation from corporate mentors and campus leaders."
+            eyebrow="Letters of Recommendation"
+            title="Professional & Academic Recommendations"
+            description="Available on request from internship supervisors and campus organizations."
           />
         </Reveal>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {recognitions.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.1}>
               <div className="glass-card flex h-full flex-col justify-between rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/30">

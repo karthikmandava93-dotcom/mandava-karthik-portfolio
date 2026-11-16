@@ -17,8 +17,8 @@ export function FeaturedProject() {
       <div className="mx-auto max-w-6xl px-6">
         <Reveal>
           <SectionHeader
-            eyebrow="Featured Project"
-            title="Talent intelligence built for recruiters"
+            eyebrow="HR Recruitment Project"
+            title="Recruitment & HR operations platform"
           />
         </Reveal>
 
@@ -57,7 +57,7 @@ export function FeaturedProject() {
             </div>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
-              {["Dashboard Overview", "Pipeline Analytics", "ATS Scoring View"].map(
+              {["Pipeline Tracking", "Applicant Records", "Funnel Analytics"].map(
                 (label, i) => (
                   <Reveal key={label} delay={0.3 + i * 0.1}>
                     <div className="screenshot-placeholder flex-col gap-2 p-6 transition-colors hover:border-teal-500/40 hover:bg-slate-800/50">
